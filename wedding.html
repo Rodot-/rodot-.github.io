@@ -22,68 +22,60 @@
 	}
 
 	.flame-container {
-	    position: absolute;
-	    top: 0;
-	    left: 0;
-	    width: 100%;
-	    height: 100%;
-	    pointer-events: none;
-	}
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
 
-	.flame {
-	    position: absolute;
-	    width: 150px;
-	    opacity: 0.7;
-	}
+        background-image: url("https://d2w9rnfcy7mm78.cloudfront.net/9987911/original_026fc0b61e323aff95685b0331d518da.gif");
+        background-repeat: repeat-x;   /* THIS is the key line */
+        background-position: bottom left;
+        background-size: auto 150px;   /* controls flame size */
 
-	.flame.left {
-	    left: 0;
-	    bottom: 0;
-	}
+        pointer-events: none;
+        opacity: 0.7;
+    }
 
-	.flame.right {
-	    right: 0;
-	    bottom: 0;
-	}
-        h1 {
-            margin: 0;
-            font-size: 3em;
-        }
+    h1 {
+        margin: 0;
+        font-size: 3em;
+    }
 
-        h2 {
-            margin-top: 10px;
-            font-weight: normal;
-        }
+    h2 {
+        margin-top: 10px;
+        font-weight: normal;
+    }
 
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+    .container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
 
-        .section {
-            margin-bottom: 40px;
-        }
+    .section {
+        margin-bottom: 40px;
+    }
 
-        .rsvp-button {
-            display: inline-block;
-            padding: 15px 25px;
-            background-color: #d98c5f;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-        }
+    .rsvp-button {
+        display: inline-block;
+        padding: 15px 25px;
+        background-color: #d98c5f;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+    }
 
-        .rsvp-button:hover {
-            background-color: #6f5747;
-        }
+    .rsvp-button:hover {
+        background-color: #6f5747;
+    }
 
-        footer {
-            background-color: #a9f5b9;
-            padding: 20px;
-            font-size: 0.9em;
-        }
+    footer {
+        background-color: #a9f5b9;
+        padding: 20px;
+        font-size: 0.9em;
+    }
     </style>
 </head>
 <body>
@@ -92,8 +84,6 @@
     <h1>Jack & Bernice</h1>
     <h2>Are Getting Married</h2>
     <div class="flame-container">
-       <img src="https://d2w9rnfcy7mm78.cloudfront.net/9987911/original_026fc0b61e323aff95685b0331d518da.gif" class="flame left">
-        <img src="https://d2w9rnfcy7mm78.cloudfront.net/9987911/original_026fc0b61e323aff95685b0331d518da.gif" class="flame right">
     </div>
 
 </header>
@@ -145,7 +135,7 @@
             We recommend arranging your flights to arrive at the Lansing airport.  
             The next nearest airport is the Gerald R. Ford airport in Grand Rapids Michigan, 
             approximately 50 minutes away by car from Lansing.  
-            The next nearest airport after the is the Detroit airport,
+            The next nearest airport after that is the Detroit airport,
              which is approximately 1 hour and 15 minutes from Lansing by car.
         </p>
         <h3>Getting around Lansing</h3>
