@@ -4,23 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jack & Bernice's Wedding</title>
+    <link href="https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=Glass+Antiqua&family=Molle:ital@1&family=Oleo+Script+Swash+Caps:wght@400;700&family=Prata&family=Young+Serif&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: "Helvetica", sans-serif;
+            font-family: "Brawler", serif;
             margin: 0;
             padding: 0;
-            background-color: #e8e1dc;
+            background-color: #DFCBAF;
             color: #333;
             text-align: center;
         }
 
         header {
             position: relative;
-            background-color: #90fb8b;
-            padding: 40px 20px 140px;
+            background:  #40462D;
+            padding: 60px 20px 0px;
             overflow: hidden;
+            border: 40px;
+            border-image-slice: 466 466 466 466;
+            border-image-width: 466px 466px 466px 466px;
+            border-image-outset: 0px 0px 0px 0px;
+            border-image-repeat: round round; 
+            border-image-source: url("Border1.png");
+            border-style: solid;
+
+            /*border-image-repeat: repeat-x;*/
+            /*border-style: double;
+            border-color: #D8A353;
+            border-width: 20px;*/
         }
 
+        .title-wrapper {
+            position: relative;
+            display: inline-block;
+            padding: 30px 60px;
+        }
+        
+
+        /*
         .flame-container {
             position: absolute;
             top: 0;
@@ -29,27 +50,50 @@
             height: 100%;
 
             background-image: url("https://d2w9rnfcy7mm78.cloudfront.net/9987911/original_026fc0b61e323aff95685b0331d518da.gif");
-            background-repeat: repeat-x;   /* THIS is the key line */
+            background-repeat: repeat-x;  
             background-position: bottom left;
-            background-size: auto 150px;   /* controls flame size */
+            background-size: auto 150px; 
 
             pointer-events: none;
             opacity: 0.7;
         }
+        */
 
         h1 {
+            font-family: "Prata", serif;
+            font-size: 4.5em;
+            font-weight: 700;
             margin: 0;
-            font-size: 3em;
+            color: #DFCBAF;
+
+            /*text-shadow:
+                2px 2px 0 #f2b880,
+                4px 4px 0 #d97b66;
+            */
         }
 
+        
+
         h2 {
-            margin-top: 10px;
-            font-weight: bold;
+            font-family: "Prata", serif;
+            margin-top: 15px;
+            font-weight: 700;
+            font-size: 2.5em;
+            color: #40462D;
+        }
+
+        h2.title-wrapper {
+            font-family: "Prata", serif;
+            margin-top: 0px;
+            font-weight: 700;
+            font-size: 1.7em;
+            color: #D8A353;
         }
 
         h3 {
             margin-top: 5px;
-            font-weight: normal;
+            font-weight: 700;
+            font-family: "Prata", serif;
         }
 
         .container {
@@ -77,30 +121,60 @@
         }
 
         footer {
-            background-color: #a9f5b9;
+            background-color: #40462D;
             padding: 20px;
             font-size: 0.9em;
+            color:#D8A353
         }
+        /*
+        .title-wrapper::before,
+        .title-wrapper::after {
+            content: "";
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            left: -10%;
+            top: -10%;
+            border: 3px solid #5a2a27;
+            border-radius: 50% 40% 60% 40% / 40% 60% 40% 60%;
+            pointer-events: none;
+        }
+        .title-wrapper::after {
+            width: 140%;
+            height: 140%;
+            left: -20%;
+            top: -20%;
+            border: 2px solid #d97b66;
+            border-radius: 60% 40% 50% 70% / 50% 60% 40% 60%;
+        }
+            */
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Jack & Bernice</h1>
-    <h2>Are Getting Married</h2>
-    <div class="flame-container">
+    <div class="title-wrapper">
+        <h1>Jack & Bernice</h1>
+        <h2 class="title-wrapper">Are Getting Married</h2>
     </div>
-
 </header>
 
 <div class="container">
 
     <div class="section">
         <h2>Wedding Details</h2>
+        
         <p><strong>Date:</strong> Saturday, August 8th, 2026</p>
-        <p><a href="https://www.google.com/maps/dir//Bridge+Street+Wedding+Chapel+LLC,+200+N+Bridge+St,+Grand+Ledge,+MI+48837/@40.1014784,-88.2540544,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x882297c577459b65:0xd518413d65472554!2m2!1d-84.7423647!2d42.7551842?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank"><strong>Location:</strong><br>
+        <p><strong>Time:</strong> 4:30pm</p>
+        <p><a href="https://www.google.com/maps/dir//Bridge+Street+Wedding+Chapel+LLC,+200+N+Bridge+St,+Grand+Ledge,+MI+48837/@40.1014784,-88.2540544,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x882297c577459b65:0xd518413d65472554!2m2!1d-84.7423647!2d42.7551842?entry=ttu&g_ep=EgoyMDI2MDQwOC4wIKXMDSoASAFQAw%3D%3D" target="_blank"><strong>Ceremony Location:</strong><br>
         Bridge Street Wedding Chapel<br>
         200 N Bridge St<br>
+        Grand Ledge, MI</a></p>
+        
+
+        <p><a href="https://www.google.com/maps/dir//Grand+Ledge+Opera+House,+121+S+Bridge+St,+Grand+Ledge,+MI+48837/@40.1014784,-88.2573312,9366m/data=!3m1!1e3!4m8!4m7!1m0!1m5!1m1!1s0x882297c51f5f3c03:0xf90f702dbafbea6c!2m2!1d-84.7447169!2d42.7538093?entry=ttu&g_ep=EgoyMDI2MDQyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank"><strong>Reception Location:</strong><br>
+        Grand Ledge Opera House<br>
+        121 S Bridge St<br>
         Grand Ledge, MI</a></p>
     </div>
 
@@ -159,6 +233,20 @@
         <p>
             We are so excited to celebrate with you! More details about the schedule,
             accommodations, and travel recommendations will be shared here soon.
+        </p>
+        <p>
+            Stay tuned for additional updates.
+        </p>
+
+    </div>
+
+    <div class="section">
+        <h2>Contact Us</h2>
+        <p>
+            If you have questions or concerns, please feel free to contact us by<br>
+            Phone: 908-256-4031<br>
+            Email: jobrien585@gmail.com<br>
+
         </p>
         <p>
             Stay tuned for additional updates.
